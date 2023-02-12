@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 20px;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#game-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+    height: 450px;
+}
+
+.btn{
+    width: 150px;
+    height: 150px;
+}
+
+.cross{
+    background-image: url('./close\ .png');
+}
+
+.circle{
+    background-image: url('./circumference.png');
+}
+
+.cross, .circle{
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.flex-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+#user1, #user2{
+    width: calc((100vw - 600px)/2);
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin: 10px;
+}
+
+#user1{
+    color: tomato;
+}
+
+#user2{
+    color:rgb(83, 186, 249)
+}
+
+#errors{
+    color: red;
+}
+
+.green-border{
+    border: 5px solid greenyellow;
+}
+
+.green{
+    color: greenyellow;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    border: 1px solid ;
+    border-radius: 5px;
+    padding: 0.5em;
+    font-size: 1rem;
+}
+
+#winner{
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+#errors{
+    text-align: center;
+}

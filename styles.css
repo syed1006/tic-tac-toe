@@ -5,6 +5,7 @@
 }
 
 header{
+    position: relative;
     padding: 20px;
     box-shadow: 0 0 10px black;
     margin-bottom: 20px;
@@ -81,12 +82,22 @@ a{
     border-radius: 5px;
     padding: 0.5em;
     font-size: 1rem;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-weight: bold;
+}
+
+a:hover{
+    color: white;
+    background-color: gray;
 }
 
 #winner{
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     letter-spacing: 1px;
+    margin-top: 30px;
 }
 
 #errors{
